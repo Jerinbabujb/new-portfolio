@@ -16,7 +16,7 @@ const ProjectCard =({index, name, description, tags, image, source_code_link})=>
       scale:1,
       speed:450
     }}
-    className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+    className="bg-tertiary rounded-2xl sm:w-[360px] w-full flex flex-col gap-7 full-padding"
     >
       <div className='relative w-full h-[230px]'>
         <img
@@ -51,7 +51,7 @@ const ProjectCard =({index, name, description, tags, image, source_code_link})=>
 }
 const Works = () => {
   return (
-    <>
+    <div className='padding-top gap-9 flex flex-col'>
     <motion.div variants={textVariant()}>
       <p className={styles.sectionSubText}>
                 My work
@@ -67,7 +67,7 @@ const Works = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repellat, esse dolorem illo dolorum quo facere assumenda at dicta iusto sequi ratione deserunt tenetur eligendi rem omnis cumque, perspiciatis voluptate.
       </motion.p>
     </div>
-    <div className='mt-20 flex flex-wrap gap-7'>
+    <div className='mt-20 flex flex-wrap gap-5'>
       {projects.map((project,index)=>(
         <ProjectCard 
         key={ `project-${index}`}
@@ -77,7 +77,7 @@ const Works = () => {
       ))}
 
     </div>
-    </>
+    </div>
   )
 }
 

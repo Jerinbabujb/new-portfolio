@@ -1,10 +1,16 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-
+.full-padding{
+  padding:8%
+}
 
 .padding{
   padding-left:10% !important;
+}
+.padding-top{
+    padding-top: 8% !important;
+
 }
 /* Colors */
 .bg-primary { background-color: #050816; }

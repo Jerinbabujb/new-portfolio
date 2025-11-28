@@ -36,7 +36,7 @@ const ExperienceCard=({experience})=>(
 )
 const Experience = () => {
   return (
-<>
+<div className='padding-top gap-9 flex flex-col'>
 <motion.div variants={textVariant()}>
   <p className={styles.sectionSubText}>
             What have i done so far
@@ -52,7 +52,7 @@ const Experience = () => {
     ))}
   </VerticalTimeline>
 </div>
-</>  )
+</div>  )
 }
 
 export default SectionWrapper(Experience,"work")

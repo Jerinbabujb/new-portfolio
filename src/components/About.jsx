@@ -31,7 +31,7 @@ const ServiceCard=({index, title, icon})=>{
 
 const About = () => {
   return (
-      <>
+      <div className='padding-top gap-9 flex flex-col'>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           Introduction
@@ -50,7 +50,7 @@ ment, and backend API integration. Skilled in modern frameworks, automation tool
         <ServiceCard key={service.title} index={index}{...service}/>
       ))}
       </div>
-      </>
+      </div>
   )
 }
 
